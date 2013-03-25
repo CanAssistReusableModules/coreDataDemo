@@ -24,6 +24,8 @@
 		D0C7C0721700B7D100C54277 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C7C0511700B7D100C54277 /* CoreData.framework */; };
 		D0C7C07A1700B7D100C54277 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0C7C0781700B7D100C54277 /* InfoPlist.strings */; };
 		D0C7C07D1700B7D200C54277 /* coreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7C07C1700B7D200C54277 /* coreDataDemoTests.m */; };
+		D0C7C08C1700CE1D00C54277 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7C08B1700CE1D00C54277 /* Company.m */; };
+		D0C7C08F1700CEDF00C54277 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7C08E1700CEDF00C54277 /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,11 @@
 		D0C7C0791700B7D100C54277 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0C7C07B1700B7D200C54277 /* coreDataDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coreDataDemoTests.h; sourceTree = "<group>"; };
 		D0C7C07C1700B7D200C54277 /* coreDataDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreDataDemoTests.m; sourceTree = "<group>"; };
+		D0C7C0861700C6CC00C54277 /* coreDataDemo 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "coreDataDemo 2.xcdatamodel"; sourceTree = "<group>"; };
+		D0C7C08A1700CE1D00C54277 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		D0C7C08B1700CE1D00C54277 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		D0C7C08D1700CEDF00C54277 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		D0C7C08E1700CEDF00C54277 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,10 @@
 				D0C7C05C1700B7D100C54277 /* AppDelegate.h */,
 				D0C7C05D1700B7D100C54277 /* AppDelegate.m */,
 				D0C7C0651700B7D100C54277 /* coreDataDemo.xcdatamodeld */,
+				D0C7C08D1700CEDF00C54277 /* Employee.h */,
+				D0C7C08E1700CEDF00C54277 /* Employee.m */,
+				D0C7C08A1700CE1D00C54277 /* Company.h */,
+				D0C7C08B1700CE1D00C54277 /* Company.m */,
 				D0C7C0541700B7D100C54277 /* Supporting Files */,
 			);
 			path = coreDataDemo;
@@ -273,6 +284,8 @@
 				D0C7C05A1700B7D100C54277 /* main.m in Sources */,
 				D0C7C05E1700B7D100C54277 /* AppDelegate.m in Sources */,
 				D0C7C0671700B7D100C54277 /* coreDataDemo.xcdatamodeld in Sources */,
+				D0C7C08C1700CE1D00C54277 /* Company.m in Sources */,
+				D0C7C08F1700CEDF00C54277 /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +391,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coreDataDemo/coreDataDemo-Prefix.pch";
 				INFOPLIST_FILE = "coreDataDemo/coreDataDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,6 +403,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coreDataDemo/coreDataDemo-Prefix.pch";
 				INFOPLIST_FILE = "coreDataDemo/coreDataDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,9 +477,10 @@
 		D0C7C0651700B7D100C54277 /* coreDataDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D0C7C0861700C6CC00C54277 /* coreDataDemo 2.xcdatamodel */,
 				D0C7C0661700B7D100C54277 /* coreDataDemo.xcdatamodel */,
 			);
-			currentVersion = D0C7C0661700B7D100C54277 /* coreDataDemo.xcdatamodel */;
+			currentVersion = D0C7C0861700C6CC00C54277 /* coreDataDemo 2.xcdatamodel */;
 			path = coreDataDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
